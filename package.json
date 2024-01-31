@@ -1,0 +1,33 @@
+{
+    "name": "loveyourhumanities",
+    "version": "1.0.0",
+    "description": "Crystal loves to teach humanities",
+    "license": "MIT",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vuepress dev docs",
+        "build": "vuepress build docs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nottechiecrystal/loveyourhumanities"
+    },
+    "keywords": [
+        "tuition"
+    ],
+    "author": "Crystal Ang",
+    "bugs": {
+        "url": "https://github.com/nottechiecrystal/loveyourhumanities/issues"
+    },
+    "homepage": "https://github.com/nottechiecrystal/loveyourhumanities#readme",
+    "devDependencies": {
+        "vuepress": "^1.4",
+        "vue": "2.6.14"
+    },
+    "dependencies": {
+        "vue-slick-carousel": "^1.0.6",
+        "vuepress-theme-casper": "^3.0.1",
+        "vue-server-renderer": "2.6.14",
+        "vue-template-compiler": "2.6.14"
+    }
+}

@@ -1,0 +1,42 @@
+backend:
+  name: github
+  repo: angyts/recipes
+  branch: main
+media_folder: "docs/.vuepress/public/img/uploads"
+public_folder: "/img/uploads"
+site_url: https://recipes.punggolgp.com/
+display_url: https://recipes.punggolgp.com/
+logo_url: https://your-site.com/images/logo.svg
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "docs/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Type", name: "type", widget: "string", default: "page" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Contact Me"
+        name: "contact"
+        file: "docs/contact.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Type", name: "type", widget: "string", default: "page" }
+          - { label: "Body", name: "body", widget: "markdown" }
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Posts" # Used in the UI
+    folder: "docs/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    show_preview_links: true
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Type", name: "type", widget: "string", default: "post" }
+      - { label: "Body", name: "body", widget: "markdown", default: "::: slot default\nUse this method to prepare prawns for frying or for other cooking.\n<!-- more -->\n1. Peel the prawns.\n2. Slit the back and the front to remove the black stuff.\n3. Put in a little bowl with the prawns and add the sugar and baking soda.\n4. Put some ice.\n5. Put in fridge for 30 mins.\n6. 1/2 fry it, so that it is just a little orange.\n7. Take it up then add to other ingredients as needed, for example into the fried rice.\n:::\n\n::: slot ingredients\n- Prawns, the fresher the better -- As needed\n- Sugar -- 1 tsp\n- Baking Soda -- 1/2 tsp\n- (Ice -- Optional)\n- Fridge\n:::"}
+      - { label: "Image", name: "image", widget: "image", default: "/img/uploads/default_food.jpeg" }
+      - { label: "Publish", name: "date", widget: "date" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["Your Father's Recipes", "food"] }
+      - { label: "Categories", name: "categories", widget: "list", default: ["food"] }
+      - { label: "Cooking Time", name: "cookingTime", widget: "string", default: "10 Minutes" }
