@@ -1,11 +1,11 @@
 backend:
   name: github
-  repo: angyts/recipes
+  repo: nottechiecrystal/loveyourhumanities
   branch: main
 media_folder: "docs/.vuepress/public/img/uploads"
 public_folder: "/img/uploads"
-site_url: https://recipes.punggolgp.com/
-display_url: https://recipes.punggolgp.com/
+site_url: https://loveyourhumanities.com/
+display_url: loveyourhumanities.com
 logo_url: https://your-site.com/images/logo.svg
 collections:
   - name: "pages"
