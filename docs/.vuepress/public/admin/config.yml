@@ -46,6 +46,6 @@ collections:
       - { label: "Publish", name: "date", widget: "date" }
       - { label: "Tags", name: "tags", widget: "list", default: ["tips"] }
       - { label: "Categories", name: "categories", widget: "list", default: ["tips"] }
-      - { label: "Meta", name: "meta", widget: "object", fields: [
+      - { label: "Meta", name: "meta", widget: "types", fields: [
         { label: "SEO description", name: "content", widget: "string" }
       ]}
