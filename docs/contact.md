@@ -2,10 +2,8 @@
 title: Contact Me
 type: page
 ---
-Contact me?
+# Whatsapp me
+[Click here to Whatsapp me.](https://api.whatsapp.com/send/?phone=6583245565&text=Hi%21+I%27m+looking+for+a+literature+or+history+tutor+%3A%29+&type=phone_number&app_absent=0)
 
-Actually don’t contact me.
-
-I probably won’t respond. I still have quite some notifications on every single app waiting for me to see while I’m cooking. 
-
-But if you really want, maybe you can leave [something here](https://github.com/angyts/recipes/issues), click to open an issue if you really want.
+# Email me
+[Click here to Email me.](mailto:crystal@loveyourhumanities.com)

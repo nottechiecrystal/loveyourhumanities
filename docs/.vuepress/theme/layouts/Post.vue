@@ -21,10 +21,6 @@
                     :datetime="datetime"
                     >{{ localeDate }}</time
                   >
-                  <span v-if="current.cookingTime" class="byline-reading-time"
-                    ><span class="bull">&bull;</span>
-                    Estimated Cooking and Preparation Time: {{ current.cookingTime }}</span
-                  >
                 </div>
               </section>
             </section>
@@ -34,12 +30,6 @@
         <figure v-if="current.image" class="post-full-image">
           <img sizes="(max-width: 800px) 400px, (max-width: 1170px) 1170px, 2000px" :src="$withBase(current.image)" :alt="current.title" />
         </figure>
-        
-        <section class="post-full-content" style="padding-bottom: 0vw !important;">
-        <h2>Ingredients List:</h2>
-         <Content slot-key="ingredients"/>
-        </section>
-        <hr></hr>
 
         <section class="post-full-content">
         <h2>Steps:</h2>
