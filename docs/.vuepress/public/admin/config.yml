@@ -47,5 +47,6 @@ collections:
       - { label: "Tags", name: "tags", widget: "list", default: ["tips"] }
       - { label: "Categories", name: "categories", widget: "list", default: ["tips"] }
       - { label: "Meta", name: "meta", widget: "object", fields: [
-        { label: "SEO description", name: "content", widget: "string" }
-      ]}
+          { label: "Name", name: "name", widget: "hidden", default: "description" },
+          { label: "Content", name: "content", widget: "string" }
+        ], default: { content: "my custom meta description" }}
