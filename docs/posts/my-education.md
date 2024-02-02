@@ -7,6 +7,9 @@ tags:
   - tips
 categories:
   - tips
+meta:
+  - name: description
+    content: my custom meta description
 ---
 ::: slot default
 this is a test post
